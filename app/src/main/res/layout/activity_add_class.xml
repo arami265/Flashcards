@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arami265.github.io.flashcards.addClass"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/appBar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Class name:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/classNameInput"
+                app:layout_constraintStart_toStartOf="@+id/classNameInput"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/classNameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="Field:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/fieldSpinner"
+                app:layout_constraintStart_toStartOf="@+id/fieldSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/classNameInput" />
+
+            <Spinner
+                android:id="@+id/fieldSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Room #:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/roomInput"
+                app:layout_constraintStart_toStartOf="@+id/roomInput"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSpinner" />
+
+            <EditText
+                android:id="@+id/roomInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Time:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/timeInput"
+                app:layout_constraintStart_toStartOf="@+id/timeInput"
+                app:layout_constraintTop_toBottomOf="@+id/roomInput" />
+
+            <EditText
+                android:id="@+id/timeInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Instructor:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/instructorInput"
+                app:layout_constraintStart_toStartOf="@+id/instructorInput"
+                app:layout_constraintTop_toBottomOf="@+id/timeInput" />
+
+            <EditText
+                android:id="@+id/instructorInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="@+id/textView7"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:text="Description:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/classDescriptionInput"
+                app:layout_constraintStart_toStartOf="@+id/classDescriptionInput"
+                app:layout_constraintTop_toBottomOf="@+id/instructorInput" />
+
+            <EditText
+                android:id="@+id/classDescriptionInput"
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:onClick="addClassMethod"
+                android:text="Add class"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/classDescriptionInput" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

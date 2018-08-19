@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arami265.github.io.flashcards.displayClassInfo"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/classNameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class Name"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Class Details" />
+
+    <TextView
+        android:id="@+id/fieldDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Field:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/classDescriptionDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class Description:"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+
+    <TextView
+        android:id="@+id/roomDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room:"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+
+    <TextView
+        android:id="@+id/timeDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+
+    <TextView
+        android:id="@+id/instructorDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructor:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+</LinearLayout>

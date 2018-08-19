@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arami265.github.io.flashcards.addDeck"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/appBar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/deckNameInput"
+            app:layout_constraintTop_toBottomOf="@+id/deckNameInput">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Deck name:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/deckNameInput"
+                app:layout_constraintStart_toStartOf="@+id/deckNameInput"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/deckNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="@+id/deckDescriptionInput"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                app:layout_constraintEnd_toEndOf="@+id/deckDescriptionInput"
+                app:layout_constraintStart_toStartOf="@+id/deckDescriptionInput"
+                app:layout_constraintTop_toBottomOf="@+id/deckNameInput" />
+
+            <EditText
+                android:id="@+id/deckDescriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:onClick="addDeckMethod"
+                android:text="Add deck"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deckDescriptionInput" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

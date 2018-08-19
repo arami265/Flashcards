@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arami265.github.io.flashcards.displayQuiz"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/deckTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Taking quiz:"
+            android:textAppearance="@android:style/TextAppearance.Material.Headline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deckNameForCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Decks"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewCardsProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Card X/X"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/displayCardsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cardTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Card Title"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textColor="#000000" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardTextTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Card text"
+                    android:textColor="#000000" />
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indicate how well you know this:"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+
+        <LinearLayout
+            android:id="@+id/viewCardButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:progress="55"
+                    android:scrollbarSize="10dp"/>
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:onClick="nextCard"
+                    android:text="Next"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/descriptorTextView"
+                    android:layout_marginStart="13dp" />
+
+                <TextView
+                    android:id="@+id/descriptorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekBar"
+                    android:layout_centerHorizontal="true"
+                    android:text="Very well"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

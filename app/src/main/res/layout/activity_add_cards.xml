@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arami265.github.io.flashcards.addCards"
+    android:weightSum="1">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/appBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/currentCardToAddText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="This will be card #"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Card headline (optional):"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+            <EditText
+                android:id="@+id/cardTitleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Card text:"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+            <EditText
+                android:id="@+id/cardTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/addNewCardButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="addNewCard"
+                android:text="Add Card" />
+
+            <Button
+                android:id="@+id/doneAddingCardsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="doneAddingCards"
+                android:text="Done adding cards"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

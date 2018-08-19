@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "457965916522",
+    "firebase_url": "https://senior-project-93ef1.firebaseio.com",
+    "project_id": "senior-project-93ef1",
+    "storage_bucket": "senior-project-93ef1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457965916522:android:2e444aa0a48c8f4a",
+        "android_client_info": {
+          "package_name": "arami265.github.io.flashcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457965916522-78l8v4v4otgv47rkf9mibshoarfuah11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8nZHb7gRty79J179PTux60XK8sLjxP48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
