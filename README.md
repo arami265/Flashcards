@@ -12,15 +12,19 @@ Basic flashcard functionality for now, including creating and deleting classes, 
 #### Examples
 
 Adding a class.
+
 ![Screen 1](docs/screen1.png)
 
 Deleting a class deletes all the decks and cards within.
+
 ![Screen 2](docs/screen2.png)
 
 The actions you can currently take for a single deck.
+
 ![Screen 3](docs/screen3.png)
 
 Viewing a card in a deck.
+
 ![Screen 4](docs/screen4.png)
 
 ##   Database
